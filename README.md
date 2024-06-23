@@ -1,2 +1,3 @@
-# kreedztimercounter
-All kreedz timers in .map format for mapping purposes
+kreedz
+sadpuppy
+spr1n
