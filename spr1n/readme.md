@@ -1,8 +1,6 @@
-http://spr1n.kz-baltic.eu/mapping/timer/spr1n_timer_readme.html
+# spr1n Timer - Information and Installation Guide (v1 and v1-d)
 
----
-
-INTRODUCTION
+## Introduction
 
 This timer is based on Sadpuppy's timer idea (sprite digits usage and game_counter toggle method with cycle),
 tho its pretty diferent and has many advantages. I discovered that Sadpuppy's timer has pretty nice system
@@ -13,97 +11,96 @@ before XJ started to use decimals). Even its not that important now with the cur
 was reached , and I belive such timer can be useful for some fast/short maps or in case you want to save
 entities.
 
+## Description
 
-DESCRIPTION
+The timer consists of the following parts:
+1. **Start Button** (target and master must not be changed)
+2. **Stop Button** (target and master must not be changed)
+3. **Group of 1XX Entities** (do not change)
+4. **Box for Digits** (feel free to edit it)
+5. **Digits (Group of Sprites)** (do not edit unless you know what you are doing)
 
-Timer consists of following parts:
-1. start button (target and master must not be changed)
-2. stop button (target and master must not be changed)
-3. group of 1XX entities (don not change)
-4. box for digits (feel free to edit it)
-5. digits, group of sprites (do not edit unless you know what you are doing)
+> **Note:** Since the timer uses sprites as digits, you cannot rotate the timer with the Transformation tool. New angles should be set for all sprites.
 
-Since timer uses sprites as digits - you cant just rotate timer with Transformation tool, new angles should
-be set for all sprites.
+### Accuracy and Compatibility
+- **Timer accuracy:** ~0.01 seconds
+- **Known issue:** Timer bug may appear with low FPS (<10-20)
+- **Compatibility:** Not compatible with kreedz and Sadpuppy's timers on the same map
 
-Timer accuracy ~0.01. Timer bug appear with low fps (<10-20/cs minimize) for decimal timer. Not tested for
-timer without decimals (in theory timerbug shouldnt appear(or go big) even with high uptime).
+## Comparison
 
-NB! timer is uncompatable with kreedz and sadpuppy's timers (in the same map)
+| Timer              | Precache | Entities | Timerbug |
+|--------------------|----------|----------|----------|
+| **spr1n timer v1-d [59:59.9]** | 13/512 (2.5%) | 219 (5.3%) | @low fps, better than kreedz timer |
+| **spr1n timer v1 [59:59]**    | 13/512 (2.5%) | 173 (4.4%) | High uptime, less than kreedz timer |
+| **kreedz timer [59:59]**      | 39/512 (7.6%) | 236 (7.9%) | Uncertain digit change, random bugs |
+| **Sadpuppy timer [3:59:59]**  | 14/512 (2.7%) | 159 (4.3%) | Constant delays due to system architecture |
 
+## Files
 
-COMPARISON
+- **spr1n_timer_v1-d.rar:** Timer with decimal [59:59.9]
+- **spr1n_timer_v1.rar:** Timer without decimal [59:59]
 
--spr1n timer v1-d [59:59.9]-
-precache: 13/512 (2.5%)
-entities: 219 (ZHTL entdata: 28291/524288    5.3%)
-timerbug: @low fps, with average-high fps better than kreedz timer
+**Sprite Directories:**
+- Top digits (old style): `sprites\spr1n\digits\kzold\`
+- Middle digits: `sprites\spr1n\digits\kznum\`
+- Bottom (white): `sprites\spr1n\digits\kzblt\`
 
--spr1n timer v1 [59:59]-
-precache: 13/512 (2.5%)
-entities: 173 (ZHTL entdata: 22935/524288    4.4%)
-timerbug: high uptime?, but much less than kreedz timer (by old tests)
+> **NB!** Do not modify these files.
 
--kreedz timer [59:59]-
-precache: 39/512 (7.6%)
-entities: 236 (ZHTL entadata: 41511/524288    7.9%)
-timerbug: uncertain digitchange, sometimes random timerbugs, +1hr uptime
+## Installation
 
--sadpuppy timer [3:59:59]-
-precache: 14/512 (2.7%)
-entities: 159 (ZHTL entadata: 22442/524288    4.3%)
-timerbug: much constant delays caused by system architecture.
+### Buttons
+1. Copy both buttons to your map. They use standard textures from `timecounter.wad`.
+2. If you want to use your own buttons, copy the "target" and "master" key values to them.
 
-Sadpuppy's timer has nearly no timerbug compared to kreedz timer, it just has offset at start (~1 second)
-caused by system architecture - delays (thats why I tried to develop this timer's idea).
+### Entities
+1. Copy the group of 1XX entities (timer engine) to your map. Place them near the timer digits.
 
+### Timer Digits
+1. Choose a timer layout that suits your map. This layout consists of a box and digit-sprites.
+2. If you want to remove the box or have your own layout, ungroup the object, remove the box, select sprites, and move them as needed.
 
-FILES
+### Files
+1. Include the relevant sprite files in your map according to the digits you use.
 
-spr1n_timer_v1-d.rar - timer with decimal [59:59.9]
-spr1n_timer_v1.rar  - timer without decimal [59:59]
+> **NB!** To avoid unexpected bugs, compile your map without VIS and RAD to verify the timer's functionality.
 
-You dont need to include all files (sprites), just depending on digits you choose:
-top digits (old style) – sprites\spr1n\digits\kzold\
-middle digits – sprites\spr1n\digits\kznum\
-bottom (white) – sprites\spr1n\digits\kzblt\
-NB! do not modify those files.
+## Quick Comparison
 
+**Advantages of spr1n timer:**
+- Saves precache resources
+- Has decimal precision
+- Less timerbug
 
-INSTALLATION
+**Disadvantages:**
+- Requires sprite files
+- Digits cannot be easily changed, replaced, or rotated
 
-Buttons:
-Copy both buttons to your map. Those use standart textures from timecounter.wad . If you want to use your
-own buttons – just copy “target” and “master” key values to them!
+---
 
-Entities:
-There is a group of 1XX entities (timer engine) in the center of timers – copy that anywhere into your map
-(prefereably  near the timer digits, so you allways know what are those entities and where)
+## Information on v1-d_nosprites Timer
 
-Timer digits:
-Since you cant “just” rotate the digits – choose timer layout that suits you and your map. This layout
-consists of BOX and digit-sprites. If you want to remove the box or you have your own layout for the timer
-– ungroup the object once, get rid of the box, select sprites and move them where you need. Note that
-sprite thickness is 32 units, but digits are drawn right in the middle
+**NEW! v1-d_nosprites Timer:**
+- Sprites are changed to brush entities.
+- No need to include sprite files.
+- Easily change digit textures and rotate the timer.
+- Decimals are still included.
+- Precache count raised from 13 to 45 (use VLUZACN compiler to keep it at 13).
 
-Files:
-Make sure you include above mentioned files (sprites) to your map, according to digits you will use.
+### Steps for VLUZACN Compiler:
+1. Copy digits, buttons, and the "group of 178 entities" to your map.
+2. Ungroup timer with digits.
+3. Select all digit groups except seconds [59:5_.9] and use `Ctrl+X` and `Ctrl+V` to remove and return digits.
+4. Select the "group of 178 entities" and use `Ctrl+X` and `Ctrl+V`.
+5. Fix or ignore the 32 errors (ALT+P): Entity (func_wall_toggle) has unused keyvalues if not using zhlt_usemodel feature.
 
-NB!
-To avoid unexpected bugs - its recommended you compile your map without VIS and RAD (because its faster
-and doesnt affect the timer) to verify timer work.
+### Changing Textures Correctly:
+1. Name your textures `<name>num#` (e.g., spr1n_num0).
+2. Include your textures into a wad.
+3. Use the texture tool and press Replace.
+4. Replace `kznum#` with `<name>num#`.
 
-
-
-
-Ask if something is unclear, because Im asleep and may not properly explane some aspects. Also if you have
-any sugestions or found a bug – I will be glad if you post that. Tho timer gone through plenty hard tests
-and should not contain any critical bugs.
-
-PS. if you need your own digits or custom look – I might help with that. Its not that easy to change or
-rotate digits actually since those are sprites. Digits could be done with func_wall_toggle instead of
-sprites, but that would raise precache up to ~50, unless you use phlt_copy_brush (but you cant find this
-entity in zhlt).
-
-
-\spr1n
+For information from the original source, visit:
+- [spr1n.kz-baltic.eu](https://web.archive.org/web/20170401043000/http://spr1n.kz-baltic.eu/mapping/timer/spr1n_timer_readme.html)
+- [XJ Forum Thread](https://web.archive.org/web/20130925074830/http://xtreme-jumps.eu/e107_plugins/forum/forum_viewtopic.php?225302)
