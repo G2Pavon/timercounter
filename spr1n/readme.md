@@ -1,4 +1,4 @@
-Information and Installation Guide (v1 and v1-d)
+##### *Information and Installation Guide (v1 and v1-d)*
 
 ## Introduction
 
@@ -23,6 +23,11 @@ The timer consists of the following parts:
 > **Note:** Since timer uses sprites as digits - you cant just rotate timer with Transformation tool, new angles should
 be set for all sprites.
 
+## Files
+
+- **spr1n_timer_v1-d:** Timer with decimal [59:59.9]
+- **spr1n_timer_v1:** Timer without decimal [59:59]
+
 ### Accuracy and Compatibility
 - **Timer accuracy:** ~0.01 seconds
 - **Timer bug:** may appear with low FPS (<10-20/cs minimize) for decimal timer. Not tested for
@@ -37,11 +42,6 @@ timer without decimals (in theory timerbug shouldnt appear(or go big) even with 
 | **spr1n timer v1 [59:59]**    | 13/512 (2.5%) | 173 (22935/524288 4.4%) | High uptime?, less than kreedz timer |
 | **kreedz timer [59:59]**      | 39/512 (7.6%) | 236 (41511/524288 7.9%) | Uncertain digit change, random timer bugs, +1hr uptime |
 | **Sadpuppy timer [3:59:59]**  | 14/512 (2.7%) | 159 (22442/524288 4.3%) | Constant delays due to system architecture |
-
-## Files
-
-- **spr1n_timer_v1-d.rar:** Timer with decimal [59:59.9]
-- **spr1n_timer_v1.rar:** Timer without decimal [59:59]
 
 **Sprite Directories:**
 - Top digits (old style): `sprites\spr1n\digits\kzold\`
