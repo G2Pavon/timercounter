@@ -3,3 +3,7 @@ This is the first timer in kz history, the original, made by Kreedz himself (as 
 | Timer              |Precache | Entities (ZHTL entdata) | Timerbug |
 |--------------------|----------|----------|----------|
 | **kreedz timer [59:59]**      | 39/512 (7.6%) | 236 (41511/524288 7.9%) | Uncertain digit change, random timer bugs, +1hr uptime |
+
+
+Requirements:
+ `timecounter.wad`
