@@ -7,5 +7,5 @@ This repository is dedicated to preserve and maintain all timers on a single web
 
 | Timer | Requirement |
 |--|---|
-|Kreedz| [timercounter.wad](https://github.com/G2Pavon/timercounter/blob/main/resources/timercounter.wad) |
-|spr1n| [timercounter.wad](https://github.com/G2Pavon/timercounter/blob/main/resources/timercounter.wad) & [sprites for v1 & v1-d](https://github.com/G2Pavon/timercounter/tree/main/resources/sprites) |
+|Kreedz| `resources/timercounter.wad` |
+|spr1n| `resources/timercounter.wad` and `resources/sprites/spr1n/digits` |
