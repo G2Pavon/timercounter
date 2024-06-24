@@ -9,4 +9,7 @@ Requirements:
  `timecounter.wad`
 
 Author:
- `[Kreedz](https://xtreme-jumps.eu/profile/42)
+ [Kreedz](https://xtreme-jumps.eu/profile/42)
+
+
+![image](https://github.com/G2Pavon/timercounter/assets/14117486/f17f675b-d4b6-4578-a21e-ce59aace44d2)
