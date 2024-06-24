@@ -20,5 +20,7 @@ Only used in spr1n timer v1 & v1-d.
 
 ### HP Booster:
 
+There is a advanced pre-compile tool that allows you to make the hp booster just using a brush entity. [REMEC](https://gitlab.com/merisanu.alex/remec/)
+
 ![image](https://github.com/G2Pavon/timercounter/assets/14117486/20220e96-bf4f-4911-b9df-40a83be3479c)
 
