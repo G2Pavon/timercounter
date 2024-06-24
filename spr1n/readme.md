@@ -43,7 +43,7 @@ timer without decimals (in theory timerbug shouldnt appear(or go big) even with 
 | **kreedz timer [59:59]**      | 39/512 (7.6%) | 236 (41511/524288 7.9%) | Uncertain digit change, random timer bugs, +1hr uptime |
 | **Sadpuppy timer [3:59:59]**  | 14/512 (2.7%) | 159 (22442/524288 4.3%) | Constant delays due to system architecture |
 
-**Sprite Directories:**
+**Requirements v1 & v1-d:**
 - Top digits (old style): `sprites\spr1n\digits\kzold\`
 - Middle digits: `sprites\spr1n\digits\kznum\`
 - Bottom (white): `sprites\spr1n\digits\kzblt\`
