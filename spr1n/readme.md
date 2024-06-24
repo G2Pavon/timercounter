@@ -99,3 +99,19 @@ and doesnt affect the timer) to verify timer work.
 Original source:
 - [spr1n.kz-baltic.eu](https://web.archive.org/web/20170401043000/http://spr1n.kz-baltic.eu/mapping/timer/spr1n_timer_readme.html)
 - [XJ Forum Thread](https://web.archive.org/web/20130925074830/http://xtreme-jumps.eu/e107_plugins/forum/forum_viewtopic.php?225302)
+  
+Author: [spr1n](https://xtreme-jumps.eu/profile/6200)
+
+## Showcase
+
+###### *old sprite above, kznum middle and kzblt below*
+![Screenshot 1](https://github.com/G2Pavon/kreedztimercounter/assets/14117486/9b43c2f2-ff5c-4f2a-88e2-96da9f776c66)
+
+![Screenshot 2](https://github.com/G2Pavon/kreedztimercounter/assets/14117486/a303e318-3f8f-41b7-b1a4-76c6afec23bd)
+
+
+###### *custom texture*
+![Screenshot 4 (custom)](https://github.com/G2Pavon/kreedztimercounter/assets/14117486/3ef72ffd-cf0c-46dc-aeb2-c64cf1bbe06e)
+
+
+
