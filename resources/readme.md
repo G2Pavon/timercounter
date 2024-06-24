@@ -2,7 +2,7 @@ Resources are the files necessary to be able to use the timers. HP Booster is no
 
 ---
 ### TIMERCOUNTER.WAD:
-The texture package which is used by Kreedz, spr1n timer (spr1n v1 & v1-d doesn't use kznum# textures) and HP Booster. 
+The texture package which is used by Kreedz timer, spr1n timer (spr1n v1 & v1-d doesn't use kznum# textures) and HP Booster. 
 ![image](https://github.com/G2Pavon/timercounter/assets/14117486/7cec1a41-48fa-4b2a-8907-de98c042f42e)
 
 
