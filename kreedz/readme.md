@@ -7,3 +7,6 @@ This is the first timer in kz history, the original, made by Kreedz himself (as 
 
 Requirements:
  `timecounter.wad`
+
+Author:
+ `[Kreedz](https://xtreme-jumps.eu/profile/42)
