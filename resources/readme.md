@@ -1,5 +1,7 @@
 Resources are the files necessary to be able to use the timers. HP Booster is not necessary, but it is advisable to add it to your map.
 
+> you can use or create your own wad & sprites.
+
 ---
 ### TIMERCOUNTER.WAD:
 The texture package which is used by Kreedz timer, spr1n timer (spr1n v1 & v1-d doesn't use kznum# textures) and HP Booster. 
