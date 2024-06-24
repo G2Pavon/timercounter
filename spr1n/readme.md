@@ -1,4 +1,4 @@
-# spr1n Timer - Information and Installation Guide (v1 and v1-d)
+Information and Installation Guide (v1 and v1-d)
 
 ## Introduction
 
