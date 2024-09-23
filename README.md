@@ -7,8 +7,17 @@ This repository is dedicated to preserve and maintain all timers on a single web
 
 | Timer | Requirement |
 |--|---|
-|Kreedz| `resources/timercounter.wad` |
+|kreedz| `resources/timercounter.wad` |
+|sadpuppy| `resources/showcounter.wad` and `resources/sprites/sadpuppy/42/digits/32x32` |
 |spr1n| `resources/timercounter.wad` and `resources/sprites/spr1n/digits` |
 
 
 Timers are deprecated since plugins exist, nowadays XJ accept maps without timers, only requiremens is add two func_button entities with `counter_start` and `counter_off` as target respectively. This way you save entities since timers waste a lot of entities.
+
+Credits:
+
+[Kreedz](https://xtreme-jumps.eu/profile/42)
+
+[SadPuppy](https://xtreme-jumps.eu/profile/21581)
+
+[spr1n](https://xtreme-jumps.eu/profile/6200)
